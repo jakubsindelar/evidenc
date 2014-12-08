@@ -12,12 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.label :name, "Jméno" %><br>
+    <%= f.text_field :name, :alt => "Jméno" %>
   </div>
   <div class="field">
-    <%= f.label :surname %><br>
-    <%= f.text_field :surname %>
+    <%= f.label :surname, "Příjmení" %><br>
+    <%= f.text_field :surname, :alt => "Příjmení" %>
   </div>
   <div class="actions">
     <%= f.submit %>
