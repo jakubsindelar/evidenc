@@ -12,15 +12,15 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :student_id %><br>
+    <%= f.label :student_id, "Student" %><br>
     <%= f.select :student_id,options_for_select(Student.all.collect{|student| ["#{student.name} #{student.surname}", student.id]}, @lesson.student_id), include_blank: true %>
   </div>
   <div class="field">
-    <%= f.label :date %><br>
+    <%= f.label :date, "Začátek hodiny" %><br>
     <%= f.datetime_select :date %>
   </div>
   <div class="field">
-    <%= f.label :note %><br>
+    <%= f.label :note, "Poznámka" %><br>
     <%= f.text_field :note %>
   </div>
   <div class="actions">
